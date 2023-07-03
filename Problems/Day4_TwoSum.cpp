@@ -47,6 +47,7 @@ int main() {
         inputArray.push_back(num);
     }
     
+    
     int input;
     std::cout << "Enter an integer: ";
     std::cin >> input;

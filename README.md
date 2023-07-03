@@ -1,4 +1,4 @@
-A repository for daily programming exercises and puzzles to keep myself consistently programming.
+A repository for daily (Weekdays at least) programming exercises and puzzles to keep myself consistently programming.
 
 My code solutions are in the Problems folder.
 Problems located in PROBLEMS.md if you want to follow along!
