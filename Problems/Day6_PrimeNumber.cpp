@@ -1,19 +1,37 @@
 #include <iostream>
-#include <vector>
-#include <string>
+#include <cmath>
 
 class Day6 {
 public:
-    static void PrimeNumber()
+    static bool PrimeNumber(int input)
     {
-       // Day 6: Prime Number Write a function that takes a number as input and returns true if it is a prime number, and false otherwise. A prime number is a number greater than 1 that is divisible by only 1 and itself.
+        if(input <= 1) return false;
+
+        for(int i = 2; i <= sqrt(input); i++)
+        {
+            if (input % i == 0) 
+            {
+                return false;
+            }
+        }
+       return true;
     }
 };
 
 int main() {
     
-
-    Day6::PrimeNumber();
+    int input;
+    std::cout << "Enter an integer: ";
+    std::cin >> input;
+    
+    if(Day6::PrimeNumber(input))
+    {
+        std::cout << input << " is a prime number" << std::endl;
+    }
+    else
+    {
+        std::cout << input << " is NOT a prime number" << std::endl;
+    }
     
     return 0;
 }
